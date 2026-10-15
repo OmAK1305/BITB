@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #1A4684;
+  --color-brand-navy-dark: #123363;
+  --color-brand-navy-light: #24589f;
+  --color-brand-cream: #F9F1E7;
+  --color-brand-cream-light: #FDFBF8;
+  --color-brand-peach: #F3C097;
+  --color-brand-peach-light: #fae7d7;
+  --color-brand-burnt: #C6742A;
+  --color-brand-burnt-dark: #a85f1e;
+  
+  --color-paper: #FFFFFF;
+  --color-ink: #14202E;
+  --color-mute: #55677C;
+  --color-link: #2C5FA8;
+  --color-border-subtle: #E2E8F0;
+
+  --font-heading: 'Nunito', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-accent: 'Caveat', cursive;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-latin-800-normal.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/manrope-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/caveat-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+/* Custom transitions and interactive styling */
+.transition-smooth {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(26, 70, 132, 0.08), 0 2px 6px -1px rgba(26, 70, 132, 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 12px 30px -4px rgba(26, 70, 132, 0.14), 0 4px 10px -2px rgba(26, 70, 132, 0.06);
+}
+
+/* Accessible focus styling */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-navy);
+  outline-offset: 2px;
+}

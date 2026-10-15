@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pair-1",
+    "petName": "Milo",
+    "breed": "Shih Tzu",
+    "service": "Full Styling & Matt Removal",
+    "beforeImage": "/images/gallery/1/IMG-20260407-WA0003.jpg",
+    "afterImage": "/images/gallery/1/IMG-20260117-WA0009.jpg",
+    "story": "Milo arrived with severely tangled facial hair and heavy matted undercoat. After a soothing conditioning soak and patient hand scissoring, he emerged fresh, playful and completely knot-free."
+  },
+  {
+    "id": "pair-2",
+    "petName": "Oscar",
+    "breed": "Lhasa Apso",
+    "service": "De-Shedding & Teddy Face Cut",
+    "beforeImage": "/images/gallery/2/IMG-20230416-WA0002.jpg",
+    "afterImage": "/images/gallery/2/IMG-20230416-WA0003.jpg",
+    "story": "Oscar's coat had grown dense and difficult to brush at home. A gentle de-shedding bath followed by an outline trim gave him a cheerful, easy-to-maintain summer look."
+  }
+]
