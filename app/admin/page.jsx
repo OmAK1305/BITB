@@ -89,7 +89,7 @@ export default function AdminPortal() {
       setAuthError("");
       showToast("Welcome to Beauty in the Beast Admin Portal!");
     } else {
-      setAuthError("Incorrect PIN. Please enter 'bitb2026' or click Quick Demo Access.");
+      setAuthError("Incorrect passcode. Please try again.");
     }
   };
 
@@ -416,7 +416,7 @@ export default function AdminPortal() {
                 type="password"
                 value={pinInput}
                 onChange={(e) => setPinInput(e.target.value)}
-                placeholder="Enter passcode (e.g. bitb2026)"
+                placeholder="Enter passcode"
                 className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-[#1A4684] focus:ring-2 focus:ring-[#1A4684]/20 outline-none transition-all text-center tracking-widest font-mono text-base"
                 autoFocus
               />
@@ -435,21 +435,6 @@ export default function AdminPortal() {
               <span>Unlock Admin Portal</span>
               <span>→</span>
             </button>
-
-            <div className="pt-2 text-center">
-              <button
-                type="button"
-                onClick={() => {
-                  setPinInput("bitb2026");
-                  sessionStorage.setItem("bitb_admin_session", "authenticated_bitb");
-                  setIsAuthenticated(true);
-                  showToast("Logged in with Quick Demo Access!");
-                }}
-                className="text-xs font-semibold text-[#C6742A] hover:underline cursor-pointer"
-              >
-                ⚡ Quick Demo Access (bitb2026)
-              </button>
-            </div>
           </form>
 
           <div className="mt-8 pt-6 border-t border-slate-100 text-center">

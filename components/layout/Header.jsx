@@ -92,22 +92,14 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Desktop Action CTA + Admin Portal Link */}
-        <div className="hidden lg:flex items-center gap-3">
+        {/* Desktop Action CTA */}
+        <div className="hidden lg:flex items-center">
           <Link
             href="/contact#appointment-form"
             className="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-bold bg-[#1A4684] text-[#F9F1E7] hover:bg-[#123363] hover:shadow-md transition-smooth"
           >
             Book Appointment
             <span className="ml-1.5 text-[#F3C097]">→</span>
-          </Link>
-          <Link
-            href="/admin"
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold text-[#1A4684] bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-colors shadow-xs"
-            title="Salon Staff Admin Portal"
-          >
-            <span>🔐</span>
-            <span>Admin</span>
           </Link>
         </div>
 
@@ -149,13 +141,6 @@ export default function Header() {
                 className="w-full text-center py-3 rounded-full text-sm font-bold bg-[#1A4684] text-[#F9F1E7]"
               >
                 Book Appointment
-              </Link>
-              <Link
-                href="/admin"
-                onClick={() => setMobileOpen(false)}
-                className="w-full text-center py-2.5 rounded-full text-xs font-bold bg-slate-100 text-[#1A4684] border border-slate-200"
-              >
-                🔐 Open Admin Portal
               </Link>
               <a
                 href={`https://wa.me/${siteSettings.whatsapp.replace(/[^0-9]/g, "")}`}
